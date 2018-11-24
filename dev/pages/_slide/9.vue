@@ -2,10 +2,10 @@
   <div class="slide-container">
     <div class="grid">
       <img
-        src="/video/continuous3.gif"
+        src="/181120_AdobeMaxJapan2018/video/continuous3.gif"
       >
       <video 
-        src="/video/materialdesign_transition.mp4"
+        src="/181120_AdobeMaxJapan2018/video/materialdesign_transition.mp4"
         autoplay />
     </div>
 

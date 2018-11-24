@@ -2,13 +2,13 @@
   <div class="slide-container">
     <img
       class="base"
-      src="/slides/181120_AdobeMax_web.059.jpeg"
+      src="/181120_AdobeMaxJapan2018/slides/181120_AdobeMax_web.059.jpeg"
       width="1920"
       height="1080" >
 
     <img
       class="gif"
-      src="/video/adobeblog-api-image.gif"
+      src="/181120_AdobeMaxJapan2018/video/adobeblog-api-image.gif"
     >
   </div>
 </template>

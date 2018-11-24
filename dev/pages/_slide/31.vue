@@ -1,7 +1,7 @@
 <template>
   <div class="slide-container">
     <VideoPlayer
-      src="/video/animate_sample.mov"
+      src="/181120_AdobeMaxJapan2018/video/animate_sample.mov"
     />
     <p class="slide-caption">Animateで作成するキャラクターアニメーション<br>
       （Animateに同梱された公式サンプル）

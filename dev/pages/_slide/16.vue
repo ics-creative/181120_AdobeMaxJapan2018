@@ -1,7 +1,7 @@
 <template>
   <div class="slide-container">
     <VideoPlayer
-      src="/video/xd_mophing.mov"
+      src="/181120_AdobeMaxJapan2018/video/xd_mophing.mov"
     />
 
     <div class="slide-caption">XDの自動アニメーションを使ったモーフィング</div>

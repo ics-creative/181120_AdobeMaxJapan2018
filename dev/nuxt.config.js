@@ -9,11 +9,12 @@ const routerBase =
         base
       }
     : {
-        middleware: 'pages'
+        middleware: 'pages',
+        base
       }
 
 const title =
-  'イマドキのUIデザインには欠かせない！ マイクロインタラクションを作るためのズルいCC活用テクニック'
+  'イマドキのUIデザインには欠かせない！ マイクロインタラクションを作るためのズルいCC活用テクニック(Adobe MAX JAPAN 2018)'
 const description = pkg.description
 const url = 'https://ics-creative.github.io' + base
 const image = url + 'slides/181120_AdobeMax_web.001.jpeg'

@@ -1,7 +1,7 @@
 <template>
   <div class="slide-container">
     <VideoPlayer
-      src="/video/pollenmap.mov"
+      src="/181120_AdobeMaxJapan2018/video/pollenmap.mov"
     />
     <p class="slide-caption">Animateを使って制作したインタラクティブコンテンツ<br>
       「日本全国花粉飛散マップ Pollen Map in Japan | ICS」<br>

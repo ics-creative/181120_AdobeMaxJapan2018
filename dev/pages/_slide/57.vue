@@ -1,9 +1,9 @@
 <template>
   <div class="slide-container">
     <VideoPlayer
-      src="/video/heart_motion_slow-28049.mov"
+      src="/181120_AdobeMaxJapan2018/video/heart_motion_slow-28049.mov"
     />
-    <p class="slide-caption">スロー再生</p>
+    <p class="slide-caption">スロー再生すると、シンプルな構造であることがわかる</p>
   </div>
 </template>
 

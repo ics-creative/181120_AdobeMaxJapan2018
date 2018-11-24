@@ -1,7 +1,7 @@
 <template>
   <div class="slide-container">
     <VideoPlayer
-      src="/video/an_textmotion.mov"
+      src="/181120_AdobeMaxJapan2018/video/an_textmotion.mov"
     />
     <p class="slide-caption">Animateでの編集画面</p>
   </div>

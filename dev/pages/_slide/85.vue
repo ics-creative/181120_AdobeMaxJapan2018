@@ -2,10 +2,10 @@
   <div class="slide-container">
     <div class="grid">
       <img
-        src="/video/coordinated_example.gif"
+        src="/181120_AdobeMaxJapan2018/video/coordinated_example.gif"
       >
       <video
-        src="/video/material_animation_chara.mp4"
+        src="/181120_AdobeMaxJapan2018/video/material_animation_chara.mp4"
         autoplay
         loop/>
     </div>

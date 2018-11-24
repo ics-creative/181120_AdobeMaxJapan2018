@@ -2,12 +2,12 @@
   <div class="slide-container">
     <div class="grid">
       <video 
-        src="/video/aftereffects_sample_1.mov"
+        src="/181120_AdobeMaxJapan2018/video/aftereffects_sample_1.mov"
         autoplay
         loop
         muted />
       <video
-        src="/video/aftereffects_sample_2.mov"
+        src="/181120_AdobeMaxJapan2018/video/aftereffects_sample_2.mov"
         autoplay
         loop
         muted />

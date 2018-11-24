@@ -1,7 +1,7 @@
 <template>
   <div class="slide-container">
     <VideoPlayer
-      src="/video/adobexd_motion.mov"
+      src="/181120_AdobeMaxJapan2018/video/adobexd_motion.mov"
     />
 
     <div class="slide-caption">XDの自動アニメーションを使った接続型アニメーション</div>

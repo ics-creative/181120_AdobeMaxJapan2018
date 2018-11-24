@@ -1,6 +1,6 @@
 <template>
   <VideoPlayer
-    src="/video/colorwheel2-27717.mov"
+    src="/181120_AdobeMaxJapan2018/video/creative-icons.mov"
   />
 </template>
 

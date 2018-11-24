@@ -2,11 +2,11 @@
   <div class="slide-container">
     <div class="grid">
       <video 
-        src="/video/materialdesign_ui_1.mp4" 
+        src="/181120_AdobeMaxJapan2018/video/materialdesign_ui_1.mp4"
         autoplay
         loop/>
       <video 
-        src="/video/materialdesign_ui_2.mp4" 
+        src="/181120_AdobeMaxJapan2018/video/materialdesign_ui_2.mp4"
         autoplay
         loop/>
     </div>

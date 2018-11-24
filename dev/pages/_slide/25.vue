@@ -1,7 +1,7 @@
 <template>
   <div class="slide-container">
     <VideoPlayer
-      src="/video/xd-to-ae-28078.mp4"
+      src="/181120_AdobeMaxJapan2018/video/xd-to-ae-28078.mp4"
     />
 
     <div class="slide-caption">XDのAE書き出し機能の紹介</div>

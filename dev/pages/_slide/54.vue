@@ -1,7 +1,7 @@
 <template>
   <div class="slide-container">
     <VideoPlayer
-      src="/video/ui_motion.mp4"
+      src="/181120_AdobeMaxJapan2018/video/ui_motion.mp4"
     />
   </div>
 </template>

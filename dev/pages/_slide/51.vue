@@ -1,9 +1,9 @@
 <template>
   <div class="slide-container">
     <VideoPlayer
-      src="/video/ae_move.mov"
+      src="/181120_AdobeMaxJapan2018/video/ae_move.mov"
     />
-    <p class="slide-caption">After Effects CCでのテクニック紹介ビデオ</p>
+    <p class="slide-caption">移動モーションに回転を使い加速と減速を表現 - After Effects</p>
   </div>
 </template>
 

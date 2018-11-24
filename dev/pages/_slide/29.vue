@@ -1,7 +1,7 @@
 <template>
   <div class="slide-container">
     <VideoPlayer
-      src="/video/animate_flare.mov"
+      src="/181120_AdobeMaxJapan2018/video/animate_flare.mov"
     />
     <p class="slide-caption">Animateを使って制作したモーショングラフィックス<br>
       「Flash for HTML5 ―HTML5開発環境としてのFlash Pro CC活用テクニック」<br>

@@ -1,4 +1,5 @@
 import Vuex from 'vuex'
+import { createUrl } from '../utils/urls'
 
 const createStore = () => {
   return new Vuex.Store({
@@ -12,8 +13,24 @@ const createStore = () => {
       }
     },
     actions: {
-      updatePage({ commit }, slideId) {
+      updatePage({ commit, state }, slideId) {
         commit('setPage', slideId)
+
+        // プリロード機能
+        //  <link rel="preload" href="XXX.png" as="image">
+        const nextUrl = createUrl(Math.min(state.slideMax, slideId + 1))
+        const prevUrl = createUrl(Math.max(1, slideId - 1))
+        const preloads = [nextUrl, prevUrl]
+        preloads.forEach(url => {
+          const el = document.querySelector(`link[href="${url}"]`)
+          if (!el) {
+            const link = document.createElement('link')
+            link.rel = 'preload'
+            link.href = url
+            link.as = 'image'
+            document.head.appendChild(link)
+          }
+        })
       }
     }
   })

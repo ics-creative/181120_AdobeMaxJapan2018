@@ -1,7 +1,7 @@
 <template>
   <div class="slide-container">
     <VideoPlayer
-      src="/video/animate_layergraff.mov"
+      src="/181120_AdobeMaxJapan2018/video/animate_layergraff.mov"
     />
     <p class="slide-caption">Animate CC 2019の新機能「レイヤーグラフ」</p>
   </div>
