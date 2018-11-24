@@ -1,10 +1,13 @@
 <template>
   <div>
-    <div class="wrapper">
-      <div class="content">
-        <nuxt/>
+    <div class="container">
+      <div class="wrapper">
+        <div class="content">
+          <nuxt/>
+        </div>
       </div>
     </div>
+
 
     <slide-controller/>
   </div>
@@ -20,9 +23,15 @@ export default {
 </script>
 
 <style scoped>
+.container {
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 64px);
+  overflow: auto;
+}
 .wrapper {
   position: absolute;
-  top: calc((100% - 64px) / 2);
+  top: 50%;
   width: 100%;
   transform: translate(0%, -50%);
 }
@@ -78,13 +87,13 @@ body {
 }
 
 .slide-caption {
-  font-size: calc(100vw / 35);
+  font-size: calc(100vw / 40);
   font-weight: bold;
   position: absolute;
   bottom: 0;
   background: rgba(0, 0, 0, 0.75);
   color: white;
-  padding: 10px;
+  padding: 5px;
   width: 100%;
   text-align: center;
 }

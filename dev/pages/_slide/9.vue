@@ -6,7 +6,10 @@
       >
       <video 
         src="/181120_AdobeMaxJapan2018/video/materialdesign_transition.mp4"
-        autoplay />
+        muted
+        autoplay
+        playsinline
+        loop />
     </div>
 
     <div class="slide-caption">画面遷移としてのマイクロインタラクション</div>

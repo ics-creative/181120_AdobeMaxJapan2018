@@ -58,14 +58,20 @@ module.exports = {
       // Twitter
       {
         name: 'twitter:card',
-        content: 'summary'
+        content: 'summary_large_image'
       },
       {
         name: 'twitter:site',
         content: '@clockmaker'
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/181120_AdobeMaxJapan2018/favicon.ico'
+      }
+    ]
   },
 
   /*
@@ -113,5 +119,9 @@ module.exports = {
     routes: [...Array(88).keys()].map(key => `/slide/${key}`)
   },
 
-  router: routerBase
+  router: routerBase,
+
+  server: {
+    host: '0.0.0.0' // デフォルト: localhost
+  }
 }

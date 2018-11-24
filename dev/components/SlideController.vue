@@ -6,11 +6,13 @@
         class="btn"><img
           src="~/assets/svg/baseline-arrow_back_ios-24px.svg"
           width="32"
-          height="32"></nuxt-link>
+          height="32"
+          title="前へ"></nuxt-link>
       <span class="slide-num">{{ slideId }} / {{ slideMax }}</span>
       <nuxt-link 
         :to="nextUrl" 
-        class="btn"><img
+        class="btn"
+        title="次へ"><img
           src="~/assets/svg/baseline-arrow_forward_ios-24px.svg"
           width="32"
           height="32"></nuxt-link>
@@ -20,6 +22,7 @@
       <button 
         v-if="isFullscreen === false"
         class="btn"
+        aria-label="フルスクリーンにする"
         @click="goFullScreen">
         <img
           src="~/assets/svg/baseline-fullscreen-24px.svg"
@@ -29,6 +32,7 @@
       <button 
         v-if="isFullscreen === true"
         class="btn"
+        aria-label="フルスクリーンを解除する"
         @click="cancelFullScreen">
         <img
           src="~/assets/svg/baseline-fullscreen_exit-24px.svg"
@@ -105,17 +109,18 @@ export default {
     },
     keydownHandler(event) {
       switch (event.keyCode) {
-        case 37:
+        case 37: // Left
           this.$router.push(this.prevUrl)
+          event.preventDefault()
           break
-        case 39:
+        case 32: // Space
+        case 39: // Right
           this.$router.push(this.nextUrl)
+          event.preventDefault()
           break
       }
     },
     progressClickHandler(event) {
-      console.log(event)
-
       const x = event.clientX
       const rate = x / window.innerWidth
 
@@ -179,7 +184,7 @@ function exitFullscreen() {
   left: 0;
   bottom: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -197,6 +202,7 @@ function exitFullscreen() {
 
 button.btn {
   -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   border: none;
   background: none;
@@ -214,7 +220,7 @@ button.btn {
   width: 200px;
   height: 40px;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
 }
 
@@ -225,7 +231,14 @@ button.btn {
   font-family: sans-serif;
 }
 .ui-right {
-  margin-right: 10px;
+  position: absolute;
+  right: 10px;
+}
+
+@media (max-width: 640px) {
+  .ui-right {
+    display: none;
+  }
 }
 
 .progress {
@@ -245,7 +258,7 @@ button.btn {
   position: absolute;
   height: 100%;
   background: #888;
-  transition: all 0.5s;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .progress:hover .progress-bar {

@@ -3,14 +3,16 @@
     <div class="grid">
       <video 
         src="/181120_AdobeMaxJapan2018/video/aftereffects_sample_1.mov"
+        muted
         autoplay
-        loop
-        muted />
+        playsinline
+        loop />
       <video
         src="/181120_AdobeMaxJapan2018/video/aftereffects_sample_2.mov"
+        muted
         autoplay
-        loop
-        muted />
+        playsinline
+        loop />
     </div>
 
     <div 

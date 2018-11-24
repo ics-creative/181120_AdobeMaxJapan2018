@@ -3,11 +3,15 @@
     <div class="grid">
       <video 
         src="/181120_AdobeMaxJapan2018/video/materialdesign_ui_1.mp4"
+        muted
         autoplay
+        playsinline
         loop/>
       <video 
         src="/181120_AdobeMaxJapan2018/video/materialdesign_ui_2.mp4"
+        muted
         autoplay
+        playsinline
         loop/>
     </div>
 

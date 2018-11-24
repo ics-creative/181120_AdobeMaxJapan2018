@@ -28,11 +28,12 @@ export default {
   display: grid;
   /* 最小100px、最大1frの列を繰り返しつくる */
   grid-template-columns: repeat(auto-fill, 25%);
-  height: 100%;
+  height: 90%;
+  margin-bottom: 10px;
 }
 .grid img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
 }
 </style>

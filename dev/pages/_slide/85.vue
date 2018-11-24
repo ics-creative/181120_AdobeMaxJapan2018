@@ -6,7 +6,9 @@
       >
       <video
         src="/181120_AdobeMaxJapan2018/video/material_animation_chara.mp4"
+        muted
         autoplay
+        playsinline
         loop/>
     </div>
 

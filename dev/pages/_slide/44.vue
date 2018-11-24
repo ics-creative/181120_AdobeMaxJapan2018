@@ -8,7 +8,6 @@
 <script>
 import VideoPlayer from '../../components/VideoPlayer'
 export default {
-  name: 'Slide43',
   components: { VideoPlayer }
 }
 </script>
