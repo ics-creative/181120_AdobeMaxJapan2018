@@ -5,22 +5,18 @@ const base = '/181120_AdobeMaxJapan2018/'
 const routerBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
     ? {
-        router: {
-          middleware: 'pages',
-          base
-        }
+        middleware: 'pages',
+        base
       }
     : {
-        router: {
-          middleware: 'pages'
-        }
+        middleware: 'pages'
       }
 
 const title =
   'イマドキのUIデザインには欠かせない！ マイクロインタラクションを作るためのズルいCC活用テクニック'
 const description = pkg.description
-const image = base + 'static/slides/181120_AdobeMax_web.001.jpeg'
 const url = 'https://ics-creative.github.io' + base
+const image = url + 'slides/181120_AdobeMax_web.001.jpeg'
 
 module.exports = {
   mode: 'spa',
@@ -116,5 +112,5 @@ module.exports = {
     routes: [...Array(88).keys()].map(key => `/slide/${key}`)
   },
 
-  ...routerBase
+  router: routerBase
 }
