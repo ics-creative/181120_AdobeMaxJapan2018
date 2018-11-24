@@ -10,9 +10,6 @@ import { mapState } from 'vuex'
 import SlideController from '../components/SlideController'
 import { createUrl } from '../utils/urls'
 export default {
-  head: {
-    title: 'top ページ'
-  },
   components: { SlideController },
   computed: {
     slideUrl() {
