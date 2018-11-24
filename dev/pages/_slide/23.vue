@@ -1,0 +1,41 @@
+<template>
+  <div class="slide-container">
+    <div class="grid">
+      <video 
+        src="/video/aftereffects_sample_1.mov"
+        autoplay
+        loop
+        muted />
+      <video
+        src="/video/aftereffects_sample_2.mov"
+        autoplay
+        loop
+        muted />
+    </div>
+
+    <div 
+      class="
+        slide-caption">After Effectsでの一般的な作例イメージ</div>
+  </div>
+</template>
+
+<script>
+import VideoPlayer from '../../components/VideoPlayer'
+export default {
+  components: { VideoPlayer }
+}
+</script>
+
+<style scoped>
+.grid {
+  /* グリッドコンテナ */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 50%);
+  height: 100%;
+}
+.grid video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+</style>
