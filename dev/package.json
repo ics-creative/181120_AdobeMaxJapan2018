@@ -1,15 +1,15 @@
 {
   "name": "adobe-max-2018-slide",
   "version": "1.0.0",
-  "description": "My world-class Nuxt.js project",
+  "description": "Adobe MAX Japan 2018で発表した「イマドキのUIデザインには欠かせない！ マイクロインタラクションを作るためのズルいCC活用テクニック」のスライドショー。",
   "author": "ics-ikeda",
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
+    "build": "DEPLOY_ENV=GH_PAGES nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
+    "generate": "DEPLOY_ENV=GH_PAGES nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path ../.gitignore . --fix",
     "precommit": "npm run lint"
   },
   "dependencies": {

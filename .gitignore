@@ -79,3 +79,7 @@ dist
 
 # IDE
 .idea
+
+# Kasu
+
+.DS_Store

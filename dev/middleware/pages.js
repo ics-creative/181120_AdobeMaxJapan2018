@@ -1,6 +1,6 @@
 export default function({ store, redirect, route }) {
   if (route.path === '/') {
-    store.commit('updatePage', 1)
+    store.dispatch('updatePage', 1)
     return
   }
 

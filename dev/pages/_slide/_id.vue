@@ -2,24 +2,20 @@
   <img
     :src="slideUrl"
     width="1920"
-    height="1080" >
+    height="1080">
 </template>
 
 <script>
 import { mapState } from 'vuex'
-import SlideController from '../../components/SlideController'
+import { createUrl } from '../../utils/urls'
+
 export default {
-  components: { SlideController },
   computed: {
     slideUrl() {
-      return `/slides/181120_AdobeMax_web.${String(this.slideId).padStart(
-        3,
-        '0'
-      )}.jpeg`
+      return createUrl(this.slideId)
     },
-    ...mapState(['slideId'])
-  },
-  asyncData({ params }) {}
+    ...mapState(['slideId', 'slideMax'])
+  }
 }
 </script>
 

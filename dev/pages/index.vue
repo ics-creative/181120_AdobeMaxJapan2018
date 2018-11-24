@@ -8,14 +8,15 @@
 <script>
 import { mapState } from 'vuex'
 import SlideController from '../components/SlideController'
+import { createUrl } from '../utils/urls'
 export default {
+  head: {
+    title: 'top ページ'
+  },
   components: { SlideController },
   computed: {
     slideUrl() {
-      return `/slides/181120_AdobeMax_web.${String(this.slideId).padStart(
-        3,
-        '0'
-      )}.jpeg`
+      return createUrl(1)
     },
     ...mapState(['slideId'])
   },
