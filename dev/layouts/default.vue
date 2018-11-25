@@ -1,5 +1,8 @@
 <template>
   <div>
+
+    <slide-controller/>
+
     <div class="container">
       <div class="wrapper">
         <div class="content">
@@ -8,8 +11,6 @@
       </div>
     </div>
 
-
-    <slide-controller/>
   </div>
 
 </template>
@@ -28,6 +29,7 @@ export default {
   width: 100%;
   height: calc(100% - 64px);
   overflow: auto;
+  pointer-events: none;
 }
 .wrapper {
   position: absolute;
@@ -46,6 +48,7 @@ export default {
   left: 0;
   bottom: 0;
   right: 0;
+  background: black;
 }
 </style>
 
@@ -96,6 +99,7 @@ body {
   padding: 5px;
   width: 100%;
   text-align: center;
+  pointer-events: auto;
 }
 
 a,

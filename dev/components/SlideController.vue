@@ -1,54 +1,65 @@
 <template>
-  <div class="ui">
-    <div class="ui-left">
-      <nuxt-link 
-        :to="prevUrl" 
-        class="btn"><img
-          src="~/assets/svg/baseline-arrow_back_ios-24px.svg"
-          width="32"
-          height="32"
-          title="前へ"></nuxt-link>
-      <span class="slide-num">{{ slideId }} / {{ slideMax }}</span>
-      <nuxt-link 
-        :to="nextUrl" 
-        class="btn"
-        title="次へ"><img
-          src="~/assets/svg/baseline-arrow_forward_ios-24px.svg"
-          width="32"
-          height="32"></nuxt-link>
-    </div>
-
-    <div class="ui-right">
-      <button 
-        v-if="isFullscreen === false"
-        class="btn"
-        aria-label="フルスクリーンにする"
-        @click="goFullScreen">
-        <img
-          src="~/assets/svg/baseline-fullscreen-24px.svg"
-          width="32"
-          height="32">
-      </button>
-      <button 
-        v-if="isFullscreen === true"
-        class="btn"
-        aria-label="フルスクリーンを解除する"
-        @click="cancelFullScreen">
-        <img
-          src="~/assets/svg/baseline-fullscreen_exit-24px.svg"
-          width="32"
-          height="32">
-      </button>
-    </div>
-
-    <div 
-      class="progress"
-      @click="progressClickHandler">
+  <div class="overlay">
+    <div class="slide">
       <div
-        :style="{width:pregress + '%'}"
-        class="progress-bar"/>
+        class="slide-left"
+        @click="goPrev"/>
+      <div
+        class="slide-right"
+        @click="goNext"/>
+    </div>
+    <div class="ui">
+      <div class="ui-left">
+        <nuxt-link
+          :to="prevUrl"
+          class="btn"><img
+            src="~/assets/svg/baseline-arrow_back_ios-24px.svg"
+            width="32"
+            height="32"
+            title="前へ"></nuxt-link>
+        <span class="slide-num">{{ slideId }} / {{ slideMax }}</span>
+        <nuxt-link
+          :to="nextUrl"
+          class="btn"
+          title="次へ"><img
+            src="~/assets/svg/baseline-arrow_forward_ios-24px.svg"
+            width="32"
+            height="32"></nuxt-link>
+      </div>
+
+      <div class="ui-right">
+        <button
+          v-if="isFullscreen === false"
+          class="btn"
+          aria-label="フルスクリーンにする"
+          @click="goFullScreen">
+          <img
+            src="~/assets/svg/baseline-fullscreen-24px.svg"
+            width="32"
+            height="32">
+        </button>
+        <button
+          v-if="isFullscreen === true"
+          class="btn"
+          aria-label="フルスクリーンを解除する"
+          @click="cancelFullScreen">
+          <img
+            src="~/assets/svg/baseline-fullscreen_exit-24px.svg"
+            width="32"
+            height="32">
+        </button>
+      </div>
+
+      <div
+        class="progress"
+        @click="progressClickHandler">
+        <div
+          :style="{width:pregress + '%'}"
+          class="progress-bar"/>
+      </div>
     </div>
   </div>
+
 </template>
 
 <script>
@@ -110,15 +121,21 @@ export default {
     keydownHandler(event) {
       switch (event.keyCode) {
         case 37: // Left
-          this.$router.push(this.prevUrl)
+          this.goPrev()
           event.preventDefault()
           break
         case 32: // Space
         case 39: // Right
-          this.$router.push(this.nextUrl)
+          this.goNext()
           event.preventDefault()
           break
       }
+    },
+    goPrev() {
+      this.$router.push(this.prevUrl)
+    },
+    goNext() {
+      this.$router.push(this.nextUrl)
     },
     progressClickHandler(event) {
       const x = event.clientX
@@ -177,6 +194,34 @@ function exitFullscreen() {
 </script>
 
 <style scoped>
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.slide {
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 64px);
+  left: 0;
+  top: 0;
+}
+.slide-left {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.slide-right {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
 .ui {
   position: absolute;
   width: 100%;

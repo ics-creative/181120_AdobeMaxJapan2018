@@ -18,9 +18,10 @@ const createStore = () => {
 
         // プリロード機能
         //  <link rel="preload" href="XXX.png" as="image">
-        const nextUrl = createUrl(Math.min(state.slideMax, slideId + 1))
+        const nextUrl1 = createUrl(Math.min(state.slideMax, slideId + 1))
+        const nextUrl2 = createUrl(Math.min(state.slideMax, slideId + 2))
         const prevUrl = createUrl(Math.max(1, slideId - 1))
-        const preloads = [nextUrl, prevUrl]
+        const preloads = [nextUrl1, nextUrl2, prevUrl]
         preloads.forEach(url => {
           const el = document.querySelector(`link[href="${url}"]`)
           if (!el) {

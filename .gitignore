@@ -83,3 +83,4 @@ dist
 # Kasu
 
 .DS_Store
+/dev/static/.DS_Store
