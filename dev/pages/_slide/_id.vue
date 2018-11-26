@@ -1,5 +1,6 @@
 <template>
   <img
+    v-image-loader
     :src="slideUrl"
     width="1920"
     height="1080">

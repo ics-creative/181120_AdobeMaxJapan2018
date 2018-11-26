@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[31],{267:function(e,n,t){"use strict";t.r(n);var i={transition:"fade",created:function(){this.$router.push("/slide/1")}},s=t(11),u=Object(s.a)(i,function(){var e=this.$createElement;return(this._self._c||e)("div")},[],!1,null,null,null);u.options.__file="index.vue";n.default=u.exports}}]);

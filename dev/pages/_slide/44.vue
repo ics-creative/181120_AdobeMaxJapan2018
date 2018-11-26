@@ -1,6 +1,8 @@
 <template>
   <div class="slide-container">
-    <img src="/181120_AdobeMaxJapan2018/video/bodymovin_2.gif" >
+    <img 
+      v-image-loader 
+      src="/181120_AdobeMaxJapan2018/video/bodymovin_2.gif" >
     <p class="slide-caption">After Effects + Bodymovinのアニメーション</p>
   </div>
 </template>

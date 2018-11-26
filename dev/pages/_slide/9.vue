@@ -2,9 +2,11 @@
   <div class="slide-container">
     <div class="grid">
       <img
+        v-image-loader
         src="/181120_AdobeMaxJapan2018/video/continuous3.gif"
       >
-      <video 
+      <video
+        v-video-loader
         src="/181120_AdobeMaxJapan2018/video/materialdesign_transition.mp4"
         muted
         autoplay

@@ -1,13 +1,15 @@
 <template>
   <div class="slide-container">
     <div class="grid">
-      <video 
+      <video
+        v-video-loader
         src="/181120_AdobeMaxJapan2018/video/materialdesign_ui_1.mp4"
         muted
         autoplay
         playsinline
         loop/>
-      <video 
+      <video
+        v-video-loader
         src="/181120_AdobeMaxJapan2018/video/materialdesign_ui_2.mp4"
         muted
         autoplay

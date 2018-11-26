@@ -2,9 +2,11 @@
   <div class="slide-container">
     <div class="grid">
       <img
+        v-image-loader
         src="/181120_AdobeMaxJapan2018/video/coordinated_example.gif"
       >
       <video
+        v-video-loader
         src="/181120_AdobeMaxJapan2018/video/material_animation_chara.mp4"
         muted
         autoplay

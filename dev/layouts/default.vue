@@ -108,4 +108,12 @@ a:visited,
 a:active {
   color: white;
 }
+
+video.loading,
+img.loading {
+  background-image: url('../assets/preloader.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 10%;
+}
 </style>

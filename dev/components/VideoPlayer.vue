@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <video
+      v-video-loader
       ref="video"
       :src="src"
       width="1920"
@@ -36,10 +37,6 @@ export default {
     return {
       isPlaying: true
     }
-  },
-  mounted() {
-    const video = this.$refs['video']
-    // this.isPlaying = !video.paused
   },
   methods: {
     play() {

@@ -84,3 +84,4 @@ dist
 
 .DS_Store
 /dev/static/.DS_Store
+/dev/.DS_Store

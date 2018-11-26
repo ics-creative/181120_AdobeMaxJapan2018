@@ -1,13 +1,15 @@
 <template>
   <div class="slide-container">
     <div class="grid">
-      <video 
+      <video
+        v-video-loader
         src="/181120_AdobeMaxJapan2018/video/aftereffects_sample_1.mov"
         muted
         autoplay
         playsinline
         loop />
       <video
+        v-video-loader
         src="/181120_AdobeMaxJapan2018/video/aftereffects_sample_2.mov"
         muted
         autoplay
@@ -15,7 +17,7 @@
         loop />
     </div>
 
-    <div 
+    <div
       class="
         slide-caption">After Effectsでの一般的な作例イメージ</div>
   </div>

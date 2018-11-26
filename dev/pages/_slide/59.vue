@@ -1,6 +1,7 @@
 <template>
   <div class="slide-container">
     <img
+      v-image-loader
       class="base"
       src="/181120_AdobeMaxJapan2018/slides/181120_AdobeMax_web.059.jpeg"
       width="1920"
